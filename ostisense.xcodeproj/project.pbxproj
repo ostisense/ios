@@ -11,10 +11,13 @@
 		04D4A39E22925C3E00F392E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04D4A39D22925C3E00F392E2 /* Assets.xcassets */; };
 		04D4A3A122925C3E00F392E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04D4A39F22925C3E00F392E2 /* LaunchScreen.storyboard */; };
 		04D4A3A92292636100F392E2 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D4A3A82292636100F392E2 /* IntroViewController.swift */; };
-		81B2920DBE4A35E7F7B5F7DF /* libPods-ostisense.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35CC99B51EA35D2A8E02A2A7 /* libPods-ostisense.a */; };
+		9A527C123724FFA8D8291E00 /* Pods_ostisense.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A9B2789BBC781685E578A04 /* Pods_ostisense.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0400AD0822926A56005F2565 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		0400AD0A22926B53005F2565 /* OstiSenseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OstiSenseButton.swift; sourceTree = "<group>"; };
+		0400AD0C22926C56005F2565 /* GFXUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFXUtils.swift; sourceTree = "<group>"; };
 		04D4A39322925C3D00F392E2 /* ostisense.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ostisense.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04D4A39622925C3D00F392E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04D4A39D22925C3E00F392E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -22,8 +25,8 @@
 		04D4A3A222925C3E00F392E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04D4A3A82292636100F392E2 /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		17ABE7F0AA8CC2C98AEB3C4E /* Pods-ostisense.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ostisense.release.xcconfig"; path = "Pods/Target Support Files/Pods-ostisense/Pods-ostisense.release.xcconfig"; sourceTree = "<group>"; };
-		35CC99B51EA35D2A8E02A2A7 /* libPods-ostisense.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ostisense.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F54543974F1C41A63A3FF42 /* Pods-ostisense.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ostisense.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ostisense/Pods-ostisense.debug.xcconfig"; sourceTree = "<group>"; };
+		9A9B2789BBC781685E578A04 /* Pods_ostisense.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ostisense.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,7 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81B2920DBE4A35E7F7B5F7DF /* libPods-ostisense.a in Frameworks */,
+				9A527C123724FFA8D8291E00 /* Pods_ostisense.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,7 +74,7 @@
 		0B3FFD225835BE4E89F3B407 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				35CC99B51EA35D2A8E02A2A7 /* libPods-ostisense.a */,
+				9A9B2789BBC781685E578A04 /* Pods_ostisense.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -96,6 +99,7 @@
 				04D4A38F22925C3D00F392E2 /* Sources */,
 				04D4A39022925C3D00F392E2 /* Frameworks */,
 				04D4A39122925C3D00F392E2 /* Resources */,
+				4F89D9E59358B64E59D91AA3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +156,30 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		4F89D9E59358B64E59D91AA3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ostisense/Pods-ostisense-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/FrameAccessor/FrameAccessor.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FrameAccessor.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ostisense/Pods-ostisense-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		C461DBD21265E7D1B20EA243 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

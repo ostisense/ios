@@ -1,4 +1,4 @@
-module Pods_ostisense {
+framework module Pods_ostisense {
   umbrella header "Pods-ostisense-umbrella.h"
 
   export *

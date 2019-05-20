@@ -1,16 +1,20 @@
 PODS:
   - Alamofire (4.8.1)
+  - FrameAccessor (2.0)
 
 DEPENDENCIES:
   - Alamofire (~> 4.8.0)
+  - FrameAccessor (~> 2.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
+    - FrameAccessor
 
 SPEC CHECKSUMS:
   Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
+  FrameAccessor: 443a13e58e23a10ff22180da0897b28c3f6abf66
 
-PODFILE CHECKSUM: 8f8e07dd1188b2449c2ac5ef862d88ccfe1bf80c
+PODFILE CHECKSUM: e7158f55d217981a3915eafe8ff7d623eb1e85c0
 
 COCOAPODS: 1.5.3
