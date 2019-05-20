@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  ostisense
-//
-//  Created by Tyler Sheaffer on 5/19/19.
-//  Copyright © 2019 OstiSense. All rights reserved.
-//
-
 import UIKit
 
 @UIApplicationMain
