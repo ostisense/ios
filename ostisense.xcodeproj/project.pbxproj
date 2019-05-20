@@ -8,19 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		04D4A39722925C3D00F392E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D4A39622925C3D00F392E2 /* AppDelegate.swift */; };
-		04D4A39922925C3D00F392E2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D4A39822925C3D00F392E2 /* ViewController.swift */; };
 		04D4A39E22925C3E00F392E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04D4A39D22925C3E00F392E2 /* Assets.xcassets */; };
 		04D4A3A122925C3E00F392E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04D4A39F22925C3E00F392E2 /* LaunchScreen.storyboard */; };
+		04D4A3A92292636100F392E2 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D4A3A82292636100F392E2 /* IntroViewController.swift */; };
 		81B2920DBE4A35E7F7B5F7DF /* libPods-ostisense.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35CC99B51EA35D2A8E02A2A7 /* libPods-ostisense.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		04D4A39322925C3D00F392E2 /* ostisense.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ostisense.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04D4A39622925C3D00F392E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		04D4A39822925C3D00F392E2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		04D4A39D22925C3E00F392E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04D4A3A022925C3E00F392E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04D4A3A222925C3E00F392E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04D4A3A82292636100F392E2 /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		17ABE7F0AA8CC2C98AEB3C4E /* Pods-ostisense.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ostisense.release.xcconfig"; path = "Pods/Target Support Files/Pods-ostisense/Pods-ostisense.release.xcconfig"; sourceTree = "<group>"; };
 		35CC99B51EA35D2A8E02A2A7 /* libPods-ostisense.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ostisense.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F54543974F1C41A63A3FF42 /* Pods-ostisense.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ostisense.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ostisense/Pods-ostisense.debug.xcconfig"; sourceTree = "<group>"; };
@@ -60,10 +60,10 @@
 			isa = PBXGroup;
 			children = (
 				04D4A39622925C3D00F392E2 /* AppDelegate.swift */,
-				04D4A39822925C3D00F392E2 /* ViewController.swift */,
 				04D4A39D22925C3E00F392E2 /* Assets.xcassets */,
 				04D4A39F22925C3E00F392E2 /* LaunchScreen.storyboard */,
 				04D4A3A222925C3E00F392E2 /* Info.plist */,
+				04D4A3A82292636100F392E2 /* IntroViewController.swift */,
 			);
 			path = ostisense;
 			sourceTree = "<group>";
@@ -181,8 +181,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04D4A39922925C3D00F392E2 /* ViewController.swift in Sources */,
 				04D4A39722925C3D00F392E2 /* AppDelegate.swift in Sources */,
+				04D4A3A92292636100F392E2 /* IntroViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
