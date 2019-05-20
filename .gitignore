@@ -1,0 +1,14 @@
+build/
+DerivedData
+
+*.pbxuser
+xcuserdata
+*.xccheckout
+*.xcuserstate
+
+*.hmap
+*.ipa
+
+.build/
+
+.DS_Store
