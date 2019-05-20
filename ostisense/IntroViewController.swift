@@ -11,6 +11,7 @@ class IntroViewController: UIViewController {
         animateLogoViewToTop()
 
         view.addSubview(welcomeLabel)
+        view.addSubview(descriptionLabel)
         view.addSubview(moreInfoButton)
         view.addSubview(signupButton)
         animateInAllElements()
@@ -44,21 +45,26 @@ class IntroViewController: UIViewController {
     }
 
     private func animateInAllElements() {
-        self.welcomeLabel.alpha = 0.0
-        self.moreInfoButton.alpha = 0.0
-        self.signupButton.alpha = 0.0
+        let views = [
+            self.welcomeLabel,
+            self.descriptionLabel,
+            self.moreInfoButton,
+            self.signupButton,
+        ]
 
-        UIView.animate(
-            withDuration: 0.3,
-            delay: 0.8,
-            options: .curveEaseOut,
-            animations: {
-                self.welcomeLabel.alpha = 1.0
-                self.moreInfoButton.alpha = 1.0
-                self.signupButton.alpha = 1.0
-            },
-            completion: nil
-        )
+        for (index, view) in views.enumerated() {
+            view.alpha = 0.0
+
+            UIView.animate(
+                withDuration: 1.0,
+                delay: 0.6 + TimeInterval(index) * 0.1,
+                options: .curveEaseInOut,
+                animations: {
+                    view.alpha = 1.0
+                },
+                completion: nil
+            )
+        }
     }
 
     private lazy var welcomeLabel: UILabel = {
@@ -67,13 +73,28 @@ class IntroViewController: UIViewController {
         welcomeLabel.text = "Welcome"
         welcomeLabel.textColor = .black
 
-        let width = self.view.width - 2 * 60
-        let sizeToFit = CGSize.init(width: welcomeLabel.width, height: CGFloat.greatestFiniteMagnitude)
-        welcomeLabel.frame.size = welcomeLabel.sizeThatFits(sizeToFit)
+        welcomeLabel.sizeToFit()
         welcomeLabel.centerX = 0.5 * self.view.width
         welcomeLabel.top = self.logoView.bottom + 40
 
         return welcomeLabel
+    }()
+
+    private lazy var descriptionLabel: UILabel = {
+        let descriptionLabel = UILabel()
+        descriptionLabel.font = UIFont(name: "Futura-Medium", size: 16)
+        descriptionLabel.text = "Marketing copy explaining the benefits lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sodales ex at porta scelerisque. Vivamus ac scelerisque nisi."
+        descriptionLabel.textColor = .black
+        descriptionLabel.textAlignment = .center
+
+        descriptionLabel.numberOfLines = 0
+        let width = self.view.width - 2 * 40
+        let sizeToFit = CGSize.init(width: width, height: CGFloat.greatestFiniteMagnitude)
+        descriptionLabel.frame.size = descriptionLabel.sizeThatFits(sizeToFit)
+        descriptionLabel.centerX = 0.5 * self.view.width
+        descriptionLabel.top = self.welcomeLabel.bottom + 40
+
+        return descriptionLabel
     }()
 
     private lazy var moreInfoButton: OstiSenseButton = {

@@ -63,7 +63,7 @@ class LoginViewController: UIViewController {
         titleLabel.textColor = .black
 
         let width = self.view.width - 2 * 60
-        let sizeToFit = CGSize.init(width: titleLabel.width, height: CGFloat.greatestFiniteMagnitude)
+        let sizeToFit = CGSize.init(width: width, height: CGFloat.greatestFiniteMagnitude)
         titleLabel.frame.size = titleLabel.sizeThatFits(sizeToFit)
         titleLabel.centerX = 0.5 * self.view.width
         titleLabel.top = self.logoView.bottom + 40
@@ -77,11 +77,9 @@ class LoginViewController: UIViewController {
         whyNeedAccountLabel.text = "Why?"
         whyNeedAccountLabel.textColor = .black
 
-        let width = self.view.width - 2 * 60
-        let sizeToFit = CGSize.init(width: whyNeedAccountLabel.width, height: CGFloat.greatestFiniteMagnitude)
-        whyNeedAccountLabel.frame.size = titleLabel.sizeThatFits(sizeToFit)
+        whyNeedAccountLabel.sizeToFit()
         whyNeedAccountLabel.centerX = 0.5 * self.view.width
-        whyNeedAccountLabel.top = self.logoView.bottom + 40
+        whyNeedAccountLabel.top = self.titleLabel.bottom + 12
 
         return whyNeedAccountLabel
     }()
