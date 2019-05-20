@@ -11,6 +11,7 @@
 		04D4A39922925C3D00F392E2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D4A39822925C3D00F392E2 /* ViewController.swift */; };
 		04D4A39E22925C3E00F392E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04D4A39D22925C3E00F392E2 /* Assets.xcassets */; };
 		04D4A3A122925C3E00F392E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04D4A39F22925C3E00F392E2 /* LaunchScreen.storyboard */; };
+		81B2920DBE4A35E7F7B5F7DF /* libPods-ostisense.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35CC99B51EA35D2A8E02A2A7 /* libPods-ostisense.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,9 @@
 		04D4A39D22925C3E00F392E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04D4A3A022925C3E00F392E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04D4A3A222925C3E00F392E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17ABE7F0AA8CC2C98AEB3C4E /* Pods-ostisense.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ostisense.release.xcconfig"; path = "Pods/Target Support Files/Pods-ostisense/Pods-ostisense.release.xcconfig"; sourceTree = "<group>"; };
+		35CC99B51EA35D2A8E02A2A7 /* libPods-ostisense.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ostisense.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F54543974F1C41A63A3FF42 /* Pods-ostisense.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ostisense.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ostisense/Pods-ostisense.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81B2920DBE4A35E7F7B5F7DF /* libPods-ostisense.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +43,8 @@
 			children = (
 				04D4A39522925C3D00F392E2 /* ostisense */,
 				04D4A39422925C3D00F392E2 /* Products */,
+				ABF732A5DC2D5D60C25CB0B1 /* Pods */,
+				0B3FFD225835BE4E89F3B407 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,6 +68,23 @@
 			path = ostisense;
 			sourceTree = "<group>";
 		};
+		0B3FFD225835BE4E89F3B407 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				35CC99B51EA35D2A8E02A2A7 /* libPods-ostisense.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ABF732A5DC2D5D60C25CB0B1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5F54543974F1C41A63A3FF42 /* Pods-ostisense.debug.xcconfig */,
+				17ABE7F0AA8CC2C98AEB3C4E /* Pods-ostisense.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -68,6 +92,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04D4A3A522925C3E00F392E2 /* Build configuration list for PBXNativeTarget "ostisense" */;
 			buildPhases = (
+				C461DBD21265E7D1B20EA243 /* [CP] Check Pods Manifest.lock */,
 				04D4A38F22925C3D00F392E2 /* Sources */,
 				04D4A39022925C3D00F392E2 /* Frameworks */,
 				04D4A39122925C3D00F392E2 /* Resources */,
@@ -125,6 +150,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C461DBD21265E7D1B20EA243 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ostisense-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		04D4A38F22925C3D00F392E2 /* Sources */ = {
@@ -268,6 +318,7 @@
 		};
 		04D4A3A622925C3E00F392E2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F54543974F1C41A63A3FF42 /* Pods-ostisense.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -286,6 +337,7 @@
 		};
 		04D4A3A722925C3E00F392E2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17ABE7F0AA8CC2C98AEB3C4E /* Pods-ostisense.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
