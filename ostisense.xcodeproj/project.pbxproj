@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0400AD0922926A56005F2565 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0400AD0822926A56005F2565 /* LoginViewController.swift */; };
+		0400AD0B22926B53005F2565 /* OstiSenseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0400AD0A22926B53005F2565 /* OstiSenseButton.swift */; };
+		0400AD0D22926C56005F2565 /* GFXUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0400AD0C22926C56005F2565 /* GFXUtils.swift */; };
 		04D4A39722925C3D00F392E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D4A39622925C3D00F392E2 /* AppDelegate.swift */; };
 		04D4A39E22925C3E00F392E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04D4A39D22925C3E00F392E2 /* Assets.xcassets */; };
 		04D4A3A122925C3E00F392E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04D4A39F22925C3E00F392E2 /* LaunchScreen.storyboard */; };
@@ -67,6 +70,9 @@
 				04D4A39F22925C3E00F392E2 /* LaunchScreen.storyboard */,
 				04D4A3A222925C3E00F392E2 /* Info.plist */,
 				04D4A3A82292636100F392E2 /* IntroViewController.swift */,
+				0400AD0822926A56005F2565 /* LoginViewController.swift */,
+				0400AD0A22926B53005F2565 /* OstiSenseButton.swift */,
+				0400AD0C22926C56005F2565 /* GFXUtils.swift */,
 			);
 			path = ostisense;
 			sourceTree = "<group>";
@@ -209,6 +215,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0400AD0922926A56005F2565 /* LoginViewController.swift in Sources */,
+				0400AD0B22926B53005F2565 /* OstiSenseButton.swift in Sources */,
+				0400AD0D22926C56005F2565 /* GFXUtils.swift in Sources */,
 				04D4A39722925C3D00F392E2 /* AppDelegate.swift in Sources */,
 				04D4A3A92292636100F392E2 /* IntroViewController.swift in Sources */,
 			);
