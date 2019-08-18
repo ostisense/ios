@@ -10,6 +10,8 @@
 		0400AD0922926A56005F2565 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0400AD0822926A56005F2565 /* LoginViewController.swift */; };
 		0400AD0B22926B53005F2565 /* OstiSenseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0400AD0A22926B53005F2565 /* OstiSenseButton.swift */; };
 		0400AD0D22926C56005F2565 /* GFXUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0400AD0C22926C56005F2565 /* GFXUtils.swift */; };
+		047117422309AC0E00EDECEE /* ForceHeatmapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047117412309AC0E00EDECEE /* ForceHeatmapController.swift */; };
+		047117442309B21500EDECEE /* HeatmapRingLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047117432309B21500EDECEE /* HeatmapRingLayer.swift */; };
 		04D4A39722925C3D00F392E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D4A39622925C3D00F392E2 /* AppDelegate.swift */; };
 		04D4A39E22925C3E00F392E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04D4A39D22925C3E00F392E2 /* Assets.xcassets */; };
 		04D4A3A122925C3E00F392E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04D4A39F22925C3E00F392E2 /* LaunchScreen.storyboard */; };
@@ -21,6 +23,8 @@
 		0400AD0822926A56005F2565 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		0400AD0A22926B53005F2565 /* OstiSenseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OstiSenseButton.swift; sourceTree = "<group>"; };
 		0400AD0C22926C56005F2565 /* GFXUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFXUtils.swift; sourceTree = "<group>"; };
+		047117412309AC0E00EDECEE /* ForceHeatmapController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForceHeatmapController.swift; sourceTree = "<group>"; };
+		047117432309B21500EDECEE /* HeatmapRingLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeatmapRingLayer.swift; sourceTree = "<group>"; };
 		04D4A39322925C3D00F392E2 /* ostisense.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ostisense.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04D4A39622925C3D00F392E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04D4A39D22925C3E00F392E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -73,6 +77,8 @@
 				0400AD0822926A56005F2565 /* LoginViewController.swift */,
 				0400AD0A22926B53005F2565 /* OstiSenseButton.swift */,
 				0400AD0C22926C56005F2565 /* GFXUtils.swift */,
+				047117412309AC0E00EDECEE /* ForceHeatmapController.swift */,
+				047117432309B21500EDECEE /* HeatmapRingLayer.swift */,
 			);
 			path = ostisense;
 			sourceTree = "<group>";
@@ -217,8 +223,10 @@
 			files = (
 				0400AD0922926A56005F2565 /* LoginViewController.swift in Sources */,
 				0400AD0B22926B53005F2565 /* OstiSenseButton.swift in Sources */,
+				047117422309AC0E00EDECEE /* ForceHeatmapController.swift in Sources */,
 				0400AD0D22926C56005F2565 /* GFXUtils.swift in Sources */,
 				04D4A39722925C3D00F392E2 /* AppDelegate.swift in Sources */,
+				047117442309B21500EDECEE /* HeatmapRingLayer.swift in Sources */,
 				04D4A3A92292636100F392E2 /* IntroViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

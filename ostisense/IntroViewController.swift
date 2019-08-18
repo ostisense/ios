@@ -102,6 +102,7 @@ class IntroViewController: UIViewController {
         moreInfoButton.centerX = 0.5 * self.view.width
         moreInfoButton.bottom = self.signupButton.top - 40
         moreInfoButton.setText("I need a mouthguard")
+        signupButton.addTarget(self, action: #selector(didTapMoreInfoButton), for: .touchUpInside)
         return moreInfoButton
     }()
 
@@ -110,6 +111,16 @@ class IntroViewController: UIViewController {
         signupButton.centerX = 0.5 * self.view.width
         signupButton.bottom = self.view.height - 40
         signupButton.setText("I have my mouthguard")
+        signupButton.addTarget(self, action: #selector(didTapSignupButton), for: .touchUpInside)
         return signupButton
     }()
+
+    @objc private func didTapMoreInfoButton() {
+        // TODO: Push an info modal or screen
+    }
+
+    @objc private func didTapSignupButton() {
+        let forceHeatmapViewController = ForceHeatmapViewController()
+        self.navigationController?.pushViewController(forceHeatmapViewController, animated: true)
+    }
 }
